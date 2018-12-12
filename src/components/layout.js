@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-        <Link to={props.do}>{props.children}</Link>
+        <Link to={props.to}>{props.children}</Link>
     </li>
 )
 
@@ -17,7 +17,7 @@ export default ({children}) => (
                 <ListLink to="/about/">About</ListLink>
                 <ListLink to="/contact/">Contact</ListLink>
             </ul>
-        </header>
+       </header>
         {children}
     </div>
 )
